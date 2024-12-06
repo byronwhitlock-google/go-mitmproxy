@@ -1,7 +1,4 @@
 # go-mitmproxy
-
-[简体中文](./README_CN.md)
-
 `go-mitmproxy` is a Golang implementation of [mitmproxy](https://mitmproxy.org/) that supports man-in-the-middle attacks and parsing, monitoring, and tampering with HTTP/HTTPS traffic.
 
 ## Key features
@@ -25,7 +22,7 @@
 ### Installation
 
 ```bash
-go install github.com/lqqyt2423/go-mitmproxy/cmd/go-mitmproxy@latest
+go install github.com/byronwhitlock-google/go-mitmproxy/cmd/go-mitmproxy@latest
 ```
 
 ### Usage
@@ -88,7 +85,7 @@ package main
 import (
 	"log"
 
-	"github.com/lqqyt2423/go-mitmproxy/proxy"
+	"github.com/byronwhitlock-google/go-mitmproxy/proxy"
 )
 
 func main() {
@@ -169,30 +166,6 @@ You can access the web interface at http://localhost:9081/ using a web browser.
 
 ![](./assets/web-3.png)
 
-### Sponsor Me
-
-If you find this project helpful, consider buying me a cup of coffee. Feel free to reach out for any technical inquiries.
-
-The author is currently unemployed. If you have any full-time or part-time job opportunities, feel free to scan the QR code to add me on WeChat for further discussion.
-
-<table>
-  <thead>
-    <tr>
-      <th align="center" style="width: 240px;">
-        <div>
-          <img src="./assets/sponsor-me.jpeg" height="200px" alt="WeChat QR Code for Sponsorship"><br>
-          <sub>WeChat QR Code for Sponsorship</sub>
-        </div>
-      </th>
-      <th align="center" style="width: 240px;">
-        <div>
-          <img src="./assets/wx.jpg" height="200px" alt="Contact Me"><br>
-          <sub>Contact Me</sub>
-        </div>
-      </th>
-    </tr>
-  </thead>
-</table>
 
 ## License
 

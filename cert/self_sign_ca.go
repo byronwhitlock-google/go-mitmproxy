@@ -156,7 +156,7 @@ func getStorePath(path string) (string, error) {
 		}
 	} else {
 		if !stat.Mode().IsDir() {
-			return "", fmt.Errorf("路径 %v 不是文件夹，请移除此文件重试", path)
+			return "", fmt.Errorf("the path %v is not a folder, please remove the file and try again", path)
 		}
 	}
 
@@ -188,7 +188,7 @@ func (ca *SelfSignCA) load() error {
 	}
 
 	if !stat.Mode().IsRegular() {
-		return fmt.Errorf("%v 不是文件", caFile)
+		return fmt.Errorf("%v not a file", caFile)
 	}
 
 	data, err := ioutil.ReadFile(caFile)
@@ -198,11 +198,11 @@ func (ca *SelfSignCA) load() error {
 
 	keyDERBlock, data := pem.Decode(data)
 	if keyDERBlock == nil {
-		return fmt.Errorf("%v 中不存在 PRIVATE KEY", caFile)
+		return fmt.Errorf("%v PRIVATE KEY", caFile)
 	}
 	certDERBlock, _ := pem.Decode(data)
 	if certDERBlock == nil {
-		return fmt.Errorf("%v 中不存在 CERTIFICATE", caFile)
+		return fmt.Errorf("%v CERTIFICATE", caFile)
 	}
 
 	var privateKey *rsa.PrivateKey

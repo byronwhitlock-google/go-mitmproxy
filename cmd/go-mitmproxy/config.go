@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/lqqyt2423/go-mitmproxy/internal/helper"
+	"github.com/byronwhitlock-google/go-mitmproxy/internal/helper"
 	log "github.com/sirupsen/logrus"
 )
 
